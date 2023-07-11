@@ -1,3 +1,20 @@
 [build-system]
 requires = [""]
 build-backend = ""
+
+[project]
+name = "library_name"
+version = "1.0.0"
+authors = []
+description = "Package that convert any file to image"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = ""
+"Bug Tracker" = ""
