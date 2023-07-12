@@ -14,12 +14,6 @@ python -m pip install -e .
 ```
 
 ### Run unit tests
-Please uninstall fitz before run the unit test
-
-```
-pip uninstall fitz
-```
-
 Run the following command:
 
 ```
