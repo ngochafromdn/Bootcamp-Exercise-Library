@@ -48,7 +48,7 @@ class MyConverter:
         for page in doc:
             pix = page.get_pixmap(matrix=magnify) 
             pix.save(f"{self.output_file_path}-{page.number}.png")
-        return f"Success."
+        return f"Success. File is saved in {self.output_file_path}"
     
     def convert(self) -> str:
         """

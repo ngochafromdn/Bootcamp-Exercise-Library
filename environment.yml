@@ -22,6 +22,7 @@ dependencies:
   - xz=5.4.2=h5eee18b_0
   - zlib=1.2.13=h5eee18b_0
   - pip:
+    - cryptography==41.0.2
     - certifi==2023.5.7
     - cffi==1.15.1
     - charset-normalizer==3.2.0
@@ -31,7 +32,6 @@ dependencies:
     - configparser==6.0.0
     - etelemetry==0.3.0
     - filelock==3.12.2
-    - fitz==0.0.1.dev2
     - future==0.18.3
     - httplib2==0.22.0
     - idna==3.4
@@ -50,7 +50,7 @@ dependencies:
     - pycparser==2.21
     - pydot==1.4.2
     - pyheif==0.7.1
-    - pymupdf==1.16.14
+    - PyMuPDF==1.22.5
     - pyparsing==3.1.0
     - pyxnat==1.5
     - rdflib==6.3.2

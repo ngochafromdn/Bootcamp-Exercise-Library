@@ -7,6 +7,12 @@ conda env create -f environment.yml
 conda activate cinna-lab2
 ```
 
+### Define pakage
+
+```
+python -m pip install -e . 
+```
+
 ### Run unit tests
 Please uninstall fitz before run the unit test
 
