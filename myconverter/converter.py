@@ -37,7 +37,7 @@ class MyConverter:
             heic_img.mode,
             heic_img.stride,
         )
-        image.save("output.png")
+        image.save(self.output_file_path)
 
         return f"Success. File is saved in {self.output_file_path}"
 
