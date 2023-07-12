@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+converter.egg-info/PKG-INFO
+converter.egg-info/SOURCES.txt
+converter.egg-info/dependency_links.txt
+converter.egg-info/top_level.txt
+myconverter/__init__.py
+myconverter/converter.py
+test/__init__.py
+test/converter.py
+test/test_myconverter.py
