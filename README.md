@@ -25,3 +25,6 @@ Run the following command:
 ```
 python test/test_myconverter.py
 ```
+
+### Unit test result
+<img src="images/result.jpg">
