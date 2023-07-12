@@ -8,5 +8,4 @@ converter.egg-info/top_level.txt
 myconverter/__init__.py
 myconverter/converter.py
 test/__init__.py
-test/converter.py
 test/test_myconverter.py
