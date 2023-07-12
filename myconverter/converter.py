@@ -1,4 +1,4 @@
-from Pil import Image
+from PIL import Image, ImageSequenceimport
 import os
 
 class MyConverter: 
@@ -19,7 +19,13 @@ class MyConverter:
     
     @staticmethod
     def convert_tiff2png(file_path: str) -> str:
-        return file_path
+        im = Image.open(file_path)
+        new_file_path = None
+        for i, page in enumerate(ImageSequence.Iterator(im)):
+            page.mode = 'I'
+            new_file_path = str(i) + '.png'
+            page.point(lambda i:i*(1./256)).convert('L').save(new_file_path)
+        return new_file_path
     
     @staticmethod
     def convert_pdf2png(file_path: str) -> str:
