@@ -1,4 +1,5 @@
-from PIL import Image, ImageSequenceimport
+from PIL import Image
+import pillow_heif
 import os
 
 class MyConverter: 
@@ -15,17 +16,21 @@ class MyConverter:
     
     @staticmethod
     def convert_heic2png(file_path: str) -> str:
-        return file_path
+        heif_file = pillow_heif.read_heif(file_path)
+        image = Image.frombytes(
+            heif_file.mode,
+            heif_file.size,
+            heif_file.data,
+            "raw",
+        
+        )
+        new_file_path = "./picture_name.png"
+        image.save("./picture_name.png", format("png"))
+        return new_file_path
     
     @staticmethod
     def convert_tiff2png(file_path: str) -> str:
-        im = Image.open(file_path)
-        new_file_path = None
-        for i, page in enumerate(ImageSequence.Iterator(im)):
-            page.mode = 'I'
-            new_file_path = str(i) + '.png'
-            page.point(lambda i:i*(1./256)).convert('L').save(new_file_path)
-        return new_file_path
+        return file_path
     
     @staticmethod
     def convert_pdf2png(file_path: str) -> str:
