@@ -61,12 +61,6 @@ class Test(unittest.TestCase):
             cvt.convert(),
             True,
         )
-    def check_convert_file(self):
-        """Check whether there is a  file converted is in test_results folder"""
-        for file in os.listdir(TEST_RESULT_FOLDER):
-            if file.endswith(".png"):
-                return True
-        return False
     
 if __name__ == "__main__":
     # check if folder test_reults not exists, create it
