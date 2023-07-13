@@ -58,6 +58,4 @@ dependencies:
     - simplejson==3.19.1
     - six==1.16.0
     - traits==6.3.2
-    - urllib3==2.0.3
-    - zipp==3.16.0
 prefix: /home/lynguyenminh/anaconda3/envs/cinna-lab2

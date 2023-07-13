@@ -62,6 +62,21 @@ class Test(unittest.TestCase):
             True,
         )
     
+    def test_convert_pdf2png(self):
+        """Test convert pdf to png"""
+        cvt = MyConverter(
+            input_file_path=os.path.join("test", "testcases", "test.pdf"),
+            output_file_path=os.path.join("test", "test_results", "out_test_pdf.png"),
+        )
+        self.assertEqual(
+            cvt.convert(),
+            True,
+        )
+
+    def check_output_existence(self):
+        '''Check the existence of output_file_path'''
+        self.assertTrue(os.path.exists(self.output_file_path))
+
 if __name__ == "__main__":
     # check if folder test_reults not exists, create it
     if not os.path.exists(TEST_RESULT_FOLDER):
