@@ -1,7 +1,11 @@
+import os
 import unittest
 from myconverter.converter import MyConverter
-import os
 
+
+'''
+This is a simple unittest for MyConverter class, which can convert png, heic, tiff, pdf to png.
+'''
 TEST_RESULT_FOLDER = os.path.join("test", "test_results")
 
 
