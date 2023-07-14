@@ -4,7 +4,9 @@ import pyheif
 import fitz
 from PIL import Image
 import logging
-
+'''
+This is a simple converter class, which can convert png, heic, tiff, pdf to png.
+'''
 
 class MyConverter:
     def __init__(self, input_file_path: str, output_file_path: str) -> None:
