@@ -2,4 +2,4 @@ venv/
 __pycache__/
 test_results/
 output.png
-*.egg-info/
+converter.egg-info/*
